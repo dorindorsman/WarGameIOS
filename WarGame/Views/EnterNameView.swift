@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct EnterNameView: View {
-    @StateObject var viewModel = MainViewModel()
-    @State var isLinkActive = false
-    
+    @ObservedObject var viewModel: MainViewModel
+   
+
     var body: some View {
         NavigationView{
             VStack{
@@ -21,21 +21,18 @@ struct EnterNameView: View {
                         .foregroundColor(Color.blue)
                         .bold()
                 }.padding(.top, 30)
-                
+
                 //Name Form
                 Form{
                     if !viewModel.errorMessage.isEmpty{
                         Text(viewModel.errorMessage)
                             .foregroundColor(Color.red)
                     }
-                    TextField("Enter Your Name",text: $viewModel.name )
+                    TextField("Enter Your Name",text: $viewModel.name)
                         .textFieldStyle(DefaultTextFieldStyle())
-                    
+
                     Button {
                         viewModel.setName()
-                        if !viewModel.name.isEmpty{
-                            self.isLinkActive = true
-                        }
                     } label: {
                         ZStack{
                             RoundedRectangle(cornerRadius: 10)
@@ -45,13 +42,13 @@ struct EnterNameView: View {
                                 .bold()
                         }
                     }.padding()
-                    
-                    
+
+
                 }
                 Spacer()
-                
-                NavigationLink(destination: LandMarksView(),isActive: $isLinkActive){}.hidden()
-                
+
+                NavigationLink(destination: LandMarksView(viewModel: viewModel),isActive: $viewModel.isLinkActive){}.hidden()
+
             }
         }
     }
@@ -59,6 +56,6 @@ struct EnterNameView: View {
 
 struct EnterNameView_Previews: PreviewProvider {
     static var previews: some View {
-        EnterNameView()
+        EnterNameView(viewModel: MainViewModel())
     }
 }

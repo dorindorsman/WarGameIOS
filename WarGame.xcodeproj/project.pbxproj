@@ -22,6 +22,7 @@
 		FA159FF02A3080FB00E21A71 /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FEF2A3080FB00E21A71 /* ScoreViewModel.swift */; };
 		FA159FF22A30962300E21A71 /* EnterNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FF12A30962300E21A71 /* EnterNameView.swift */; };
 		FA159FF42A30968D00E21A71 /* LandMarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FF32A30968D00E21A71 /* LandMarksView.swift */; };
+		FA159FF72A31047400E21A71 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FF62A31047400E21A71 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		FA159FEF2A3080FB00E21A71 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
 		FA159FF12A30962300E21A71 /* EnterNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNameView.swift; sourceTree = "<group>"; };
 		FA159FF32A30968D00E21A71 /* LandMarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMarksView.swift; sourceTree = "<group>"; };
+		FA159FF62A31047400E21A71 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		FA159FB22A2FA26500E21A71 /* WarGame */ = {
 			isa = PBXGroup;
 			children = (
+				FA159FF52A31043D00E21A71 /* Tools */,
 				FA159FE02A307CF100E21A71 /* Models */,
 				FA159FDF2A307CD600E21A71 /* ViewModels */,
 				FA159FDE2A307CB100E21A71 /* Views */,
@@ -173,6 +176,14 @@
 				FA159FE92A30809200E21A71 /* Player.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FA159FF52A31043D00E21A71 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FA159FF62A31047400E21A71 /* LocationManager.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +319,7 @@
 				FA159FDD2A2FB6C700E21A71 /* MainView.swift in Sources */,
 				FA159FF22A30962300E21A71 /* EnterNameView.swift in Sources */,
 				FA159FE82A30807C00E21A71 /* ScoreView.swift in Sources */,
+				FA159FF72A31047400E21A71 /* LocationManager.swift in Sources */,
 				FA159FE62A30806D00E21A71 /* GameView.swift in Sources */,
 				FA159FEA2A30809200E21A71 /* Player.swift in Sources */,
 				FA159FB42A2FA26500E21A71 /* WarGameApp.swift in Sources */,
@@ -475,6 +487,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WarGame/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app requires access to the device's location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires access to the device's location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -502,6 +516,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WarGame/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app requires access to the device's location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires access to the device's location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

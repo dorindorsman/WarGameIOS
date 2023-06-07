@@ -8,10 +8,15 @@
 import Foundation
 
 class MainViewModel: ObservableObject{
+    @Published var constLongitude = 34.817549168324334
     
     @Published var name : String = ""
     @Published var title : String = "Welcome !"
     @Published var errorMessage = ""
+    @Published var isLinkActive = false
+    @Published var showLocation = false
+    @Published var isWest = false
+    @Published var isReadyToPlay = false
     
     init(){
         
@@ -23,11 +28,21 @@ class MainViewModel: ObservableObject{
             return
         }
         title = "Welcome " + name + "!"
-        print("Called")
+        isLinkActive = true
     }
     
-    func checkLandMarks(){
-        
+    func checkLandMarks(latitude: Double, longitude: Double){
+        print(latitude, longitude)
+        if longitude < constLongitude{
+            isWest = true
+        }else{
+            isWest = false
+        }
+        showLocation = true
+    }
+    
+    func startPlay(){
+        isReadyToPlay = true
     }
     
 }

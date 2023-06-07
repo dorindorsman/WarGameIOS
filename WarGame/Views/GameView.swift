@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct GameView: View {
+    var name: String
+    var isWest: Bool
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(name + isWest.description)
     }
 }
 
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
-        GameView()
+        GameView(name: "dorin", isWest: true)
     }
 }

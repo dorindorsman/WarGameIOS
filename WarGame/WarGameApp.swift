@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct WarGameApp: App {
+    @StateObject var locationManager = LocationManager()
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MainView().environmentObject(locationManager)
         }
     }
 }
