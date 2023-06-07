@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		FA159FB42A2FA26500E21A71 /* WarGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FB32A2FA26500E21A71 /* WarGameApp.swift */; };
-		FA159FB62A2FA26500E21A71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FB52A2FA26500E21A71 /* ContentView.swift */; };
 		FA159FB82A2FA26500E21A71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA159FB72A2FA26500E21A71 /* Assets.xcassets */; };
 		FA159FBB2A2FA26500E21A71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA159FBA2A2FA26500E21A71 /* Preview Assets.xcassets */; };
 		FA159FC52A2FA26600E21A71 /* WarGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FC42A2FA26600E21A71 /* WarGameTests.swift */; };
 		FA159FCF2A2FA26600E21A71 /* WarGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FCE2A2FA26600E21A71 /* WarGameUITests.swift */; };
 		FA159FD12A2FA26600E21A71 /* WarGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FD02A2FA26600E21A71 /* WarGameUITestsLaunchTests.swift */; };
+		FA159FDD2A2FB6C700E21A71 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FB52A2FA26500E21A71 /* MainView.swift */; };
+		FA159FE62A30806D00E21A71 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FE52A30806D00E21A71 /* GameView.swift */; };
+		FA159FE82A30807C00E21A71 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FE72A30807C00E21A71 /* ScoreView.swift */; };
+		FA159FEA2A30809200E21A71 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FE92A30809200E21A71 /* Player.swift */; };
+		FA159FEC2A3080D900E21A71 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FEB2A3080D900E21A71 /* MainViewModel.swift */; };
+		FA159FEE2A3080E900E21A71 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FED2A3080E900E21A71 /* GameViewModel.swift */; };
+		FA159FF02A3080FB00E21A71 /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FEF2A3080FB00E21A71 /* ScoreViewModel.swift */; };
+		FA159FF22A30962300E21A71 /* EnterNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FF12A30962300E21A71 /* EnterNameView.swift */; };
+		FA159FF42A30968D00E21A71 /* LandMarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FF32A30968D00E21A71 /* LandMarksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,7 @@
 /* Begin PBXFileReference section */
 		FA159FB02A2FA26500E21A71 /* WarGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA159FB32A2FA26500E21A71 /* WarGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarGameApp.swift; sourceTree = "<group>"; };
-		FA159FB52A2FA26500E21A71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA159FB52A2FA26500E21A71 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FA159FB72A2FA26500E21A71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA159FBA2A2FA26500E21A71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA159FC02A2FA26600E21A71 /* WarGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +52,14 @@
 		FA159FCA2A2FA26600E21A71 /* WarGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA159FCE2A2FA26600E21A71 /* WarGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarGameUITests.swift; sourceTree = "<group>"; };
 		FA159FD02A2FA26600E21A71 /* WarGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA159FE52A30806D00E21A71 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		FA159FE72A30807C00E21A71 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		FA159FE92A30809200E21A71 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		FA159FEB2A3080D900E21A71 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FA159FED2A3080E900E21A71 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		FA159FEF2A3080FB00E21A71 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
+		FA159FF12A30962300E21A71 /* EnterNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNameView.swift; sourceTree = "<group>"; };
+		FA159FF32A30968D00E21A71 /* LandMarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMarksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +110,10 @@
 		FA159FB22A2FA26500E21A71 /* WarGame */ = {
 			isa = PBXGroup;
 			children = (
+				FA159FE02A307CF100E21A71 /* Models */,
+				FA159FDF2A307CD600E21A71 /* ViewModels */,
+				FA159FDE2A307CB100E21A71 /* Views */,
 				FA159FB32A2FA26500E21A71 /* WarGameApp.swift */,
-				FA159FB52A2FA26500E21A71 /* ContentView.swift */,
 				FA159FB72A2FA26500E21A71 /* Assets.xcassets */,
 				FA159FB92A2FA26500E21A71 /* Preview Content */,
 			);
@@ -125,6 +143,36 @@
 				FA159FD02A2FA26600E21A71 /* WarGameUITestsLaunchTests.swift */,
 			);
 			path = WarGameUITests;
+			sourceTree = "<group>";
+		};
+		FA159FDE2A307CB100E21A71 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA159FB52A2FA26500E21A71 /* MainView.swift */,
+				FA159FE52A30806D00E21A71 /* GameView.swift */,
+				FA159FE72A30807C00E21A71 /* ScoreView.swift */,
+				FA159FF12A30962300E21A71 /* EnterNameView.swift */,
+				FA159FF32A30968D00E21A71 /* LandMarksView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA159FDF2A307CD600E21A71 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA159FEB2A3080D900E21A71 /* MainViewModel.swift */,
+				FA159FED2A3080E900E21A71 /* GameViewModel.swift */,
+				FA159FEF2A3080FB00E21A71 /* ScoreViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FA159FE02A307CF100E21A71 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA159FE92A30809200E21A71 /* Player.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +305,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA159FB62A2FA26500E21A71 /* ContentView.swift in Sources */,
+				FA159FDD2A2FB6C700E21A71 /* MainView.swift in Sources */,
+				FA159FF22A30962300E21A71 /* EnterNameView.swift in Sources */,
+				FA159FE82A30807C00E21A71 /* ScoreView.swift in Sources */,
+				FA159FE62A30806D00E21A71 /* GameView.swift in Sources */,
+				FA159FEA2A30809200E21A71 /* Player.swift in Sources */,
 				FA159FB42A2FA26500E21A71 /* WarGameApp.swift in Sources */,
+				FA159FEC2A3080D900E21A71 /* MainViewModel.swift in Sources */,
+				FA159FEE2A3080E900E21A71 /* GameViewModel.swift in Sources */,
+				FA159FF42A30968D00E21A71 /* LandMarksView.swift in Sources */,
+				FA159FF02A3080FB00E21A71 /* ScoreViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,8 +478,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,8 +505,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
