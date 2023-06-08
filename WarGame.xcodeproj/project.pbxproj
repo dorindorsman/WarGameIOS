@@ -16,13 +16,13 @@
 		FA159FDD2A2FB6C700E21A71 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FB52A2FA26500E21A71 /* MainView.swift */; };
 		FA159FE62A30806D00E21A71 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FE52A30806D00E21A71 /* GameView.swift */; };
 		FA159FE82A30807C00E21A71 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FE72A30807C00E21A71 /* ScoreView.swift */; };
-		FA159FEA2A30809200E21A71 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FE92A30809200E21A71 /* Player.swift */; };
 		FA159FEC2A3080D900E21A71 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FEB2A3080D900E21A71 /* MainViewModel.swift */; };
 		FA159FEE2A3080E900E21A71 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FED2A3080E900E21A71 /* GameViewModel.swift */; };
 		FA159FF02A3080FB00E21A71 /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FEF2A3080FB00E21A71 /* ScoreViewModel.swift */; };
 		FA159FF22A30962300E21A71 /* EnterNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FF12A30962300E21A71 /* EnterNameView.swift */; };
 		FA159FF42A30968D00E21A71 /* LandMarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FF32A30968D00E21A71 /* LandMarksView.swift */; };
 		FA159FF72A31047400E21A71 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FF62A31047400E21A71 /* LocationManager.swift */; };
+		FA159FF92A32246400E21A71 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FF82A32246400E21A71 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,13 +55,13 @@
 		FA159FD02A2FA26600E21A71 /* WarGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FA159FE52A30806D00E21A71 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		FA159FE72A30807C00E21A71 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
-		FA159FE92A30809200E21A71 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		FA159FEB2A3080D900E21A71 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		FA159FED2A3080E900E21A71 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		FA159FEF2A3080FB00E21A71 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
 		FA159FF12A30962300E21A71 /* EnterNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNameView.swift; sourceTree = "<group>"; };
 		FA159FF32A30968D00E21A71 /* LandMarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMarksView.swift; sourceTree = "<group>"; };
 		FA159FF62A31047400E21A71 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		FA159FF82A32246400E21A71 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +173,7 @@
 		FA159FE02A307CF100E21A71 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FA159FE92A30809200E21A71 /* Player.swift */,
+				FA159FF82A32246400E21A71 /* Card.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -321,8 +321,8 @@
 				FA159FE82A30807C00E21A71 /* ScoreView.swift in Sources */,
 				FA159FF72A31047400E21A71 /* LocationManager.swift in Sources */,
 				FA159FE62A30806D00E21A71 /* GameView.swift in Sources */,
-				FA159FEA2A30809200E21A71 /* Player.swift in Sources */,
 				FA159FB42A2FA26500E21A71 /* WarGameApp.swift in Sources */,
+				FA159FF92A32246400E21A71 /* Card.swift in Sources */,
 				FA159FEC2A3080D900E21A71 /* MainViewModel.swift in Sources */,
 				FA159FEE2A3080E900E21A71 /* GameViewModel.swift in Sources */,
 				FA159FF42A30968D00E21A71 /* LandMarksView.swift in Sources */,

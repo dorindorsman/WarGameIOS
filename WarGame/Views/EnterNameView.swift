@@ -30,21 +30,22 @@ struct EnterNameView: View {
                     }
                     TextField("Enter Your Name",text: $viewModel.name)
                         .textFieldStyle(DefaultTextFieldStyle())
-
-                    Button {
-                        viewModel.setName()
-                    } label: {
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(Color.blue)
-                            Text("Submit")
-                                .foregroundColor(Color.white)
-                                .bold()
-                        }
-                    }.padding()
-
-
                 }
+                
+                //Button
+                Button {
+                    viewModel.setName()
+                } label: {
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 10)
+                            .foregroundColor(Color.blue)
+                            .frame(width: 150, height: 50)
+                        Text("Submit")
+                            .foregroundColor(Color.white)
+                            .bold()
+                    }
+                }.padding()
+                
                 Spacer()
 
                 NavigationLink(destination: LandMarksView(viewModel: viewModel),isActive: $viewModel.isLinkActive){}.hidden()
