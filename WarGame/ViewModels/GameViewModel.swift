@@ -45,12 +45,15 @@ class GameViewModel: ObservableObject{
     }
     
     private func startTurnTimer() {
-        Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { [weak self] _ in
+        Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { [weak self] timer in
+            //    Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] timer in
+
             self?.turnCards()
             self?.gameCount += 1
             
             if self?.gameCount == 10 {
                 self?.endGame()
+                timer.invalidate()
             }
         }
     }

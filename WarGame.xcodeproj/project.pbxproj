@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C46FB84A2A32453700334929 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46FB8492A32453700334929 /* MainView.swift */; };
 		FA159FB42A2FA26500E21A71 /* WarGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FB32A2FA26500E21A71 /* WarGameApp.swift */; };
 		FA159FB82A2FA26500E21A71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA159FB72A2FA26500E21A71 /* Assets.xcassets */; };
 		FA159FBB2A2FA26500E21A71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA159FBA2A2FA26500E21A71 /* Preview Assets.xcassets */; };
 		FA159FC52A2FA26600E21A71 /* WarGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FC42A2FA26600E21A71 /* WarGameTests.swift */; };
 		FA159FCF2A2FA26600E21A71 /* WarGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FCE2A2FA26600E21A71 /* WarGameUITests.swift */; };
 		FA159FD12A2FA26600E21A71 /* WarGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FD02A2FA26600E21A71 /* WarGameUITestsLaunchTests.swift */; };
-		FA159FDD2A2FB6C700E21A71 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FB52A2FA26500E21A71 /* MainView.swift */; };
 		FA159FE62A30806D00E21A71 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FE52A30806D00E21A71 /* GameView.swift */; };
 		FA159FE82A30807C00E21A71 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FE72A30807C00E21A71 /* ScoreView.swift */; };
 		FA159FEC2A3080D900E21A71 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA159FEB2A3080D900E21A71 /* MainViewModel.swift */; };
@@ -43,9 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C46FB8492A32453700334929 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FA159FB02A2FA26500E21A71 /* WarGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA159FB32A2FA26500E21A71 /* WarGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarGameApp.swift; sourceTree = "<group>"; };
-		FA159FB52A2FA26500E21A71 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FA159FB72A2FA26500E21A71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA159FBA2A2FA26500E21A71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA159FC02A2FA26600E21A71 /* WarGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,11 +151,11 @@
 		FA159FDE2A307CB100E21A71 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FA159FB52A2FA26500E21A71 /* MainView.swift */,
 				FA159FE52A30806D00E21A71 /* GameView.swift */,
 				FA159FE72A30807C00E21A71 /* ScoreView.swift */,
 				FA159FF12A30962300E21A71 /* EnterNameView.swift */,
 				FA159FF32A30968D00E21A71 /* LandMarksView.swift */,
+				C46FB8492A32453700334929 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -316,7 +316,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA159FDD2A2FB6C700E21A71 /* MainView.swift in Sources */,
 				FA159FF22A30962300E21A71 /* EnterNameView.swift in Sources */,
 				FA159FE82A30807C00E21A71 /* ScoreView.swift in Sources */,
 				FA159FF72A31047400E21A71 /* LocationManager.swift in Sources */,
@@ -324,6 +323,7 @@
 				FA159FB42A2FA26500E21A71 /* WarGameApp.swift in Sources */,
 				FA159FF92A32246400E21A71 /* Card.swift in Sources */,
 				FA159FEC2A3080D900E21A71 /* MainViewModel.swift in Sources */,
+				C46FB84A2A32453700334929 /* MainView.swift in Sources */,
 				FA159FEE2A3080E900E21A71 /* GameViewModel.swift in Sources */,
 				FA159FF42A30968D00E21A71 /* LandMarksView.swift in Sources */,
 				FA159FF02A3080FB00E21A71 /* ScoreViewModel.swift in Sources */,
