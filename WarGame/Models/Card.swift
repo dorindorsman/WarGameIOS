@@ -8,6 +8,6 @@
 import Foundation
 
 struct Card {
-    let image: String
-    let strength: Int
+    var image: String
+    var strength: Int
 }

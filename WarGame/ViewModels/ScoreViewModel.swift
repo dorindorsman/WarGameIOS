@@ -9,5 +9,22 @@ import Foundation
 
 
 class ScoreViewModel: ObservableObject{
+    @Published var winner : String = ""
+    @Published var title : String = ""
+    @Published var isLinkActive = true
+
+    
+    init()
+    {
+        
+    }
+    
+    
+    func setTitle(){
+
+        title = "The Winner is " + winner + "!"
+        isLinkActive = true
+    }
+    
     
 }
