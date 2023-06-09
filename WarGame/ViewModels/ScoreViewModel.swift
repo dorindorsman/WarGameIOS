@@ -9,22 +9,18 @@ import Foundation
 
 
 class ScoreViewModel: ObservableObject{
-    @Published var winner : String = ""
-    @Published var title : String = ""
-    @Published var isLinkActive = true
+    @Published var winnerTitle : String = ""
+    @Published var scoreTitle : String = ""
+    @Published var isBack = false
 
-    
-    init()
+    init(winnerName: String, score: Int)
     {
-        
+        winnerTitle = "The Winner is " + winnerName + "!"
+        scoreTitle = "Score : \(score)"
     }
     
-    
-    func setTitle(){
+    func backTomMenu(){
+        isBack = true
+    }
 
-        title = "The Winner is " + winner + "!"
-        isLinkActive = true
-    }
-    
-    
 }

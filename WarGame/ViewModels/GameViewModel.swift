@@ -18,15 +18,10 @@ class GameViewModel: ObservableObject{
     @Published var isPlayerWest = false
     @Published var alignHouse = ""
     @Published var numOfGame = 0
- 
-
-//    @Published var leftScore = 0
-//    @Published var rightName = ""
-//    @Published var rightScore = 0
-      
-    
     @Published var playerCard: Card
     @Published var houseCard: Card
+    @Published var winner :String = ""
+    @Published var winnerScore = 0
 
     init(isWest: Bool, name: String) {
         playerName = name
@@ -46,14 +41,12 @@ class GameViewModel: ObservableObject{
         startTurnTimer()
     }
 
-
      func  generateRandomCard() -> Card {
           let randomValue = Int.random(in: 2...14)
           print(randomValue)
           let card = Card(image: "card\(randomValue)", strength: randomValue)
           return card
       }
-    
     
     func setPlayerCardRandomly() {
         let randomPlayerCard = self.generateRandomCard() // Use 'self' explicitly
@@ -62,33 +55,12 @@ class GameViewModel: ObservableObject{
         let randomHouseCard = self.generateRandomCard() // Use 'self' explicitly
         houseCard = randomHouseCard
     }
-    
-    
-//    private func startTurnTimer() {
-//
-//
-//        Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { [weak self] timer in
-//            self?.turnCards()
-//            self?.gameCount += 1
-//            self?.setPlayerCardRandomly()
-//
-//
-//            if self?.gameCount == 10 {
-//                self?.endGame()
-//                timer.invalidate()
-//            }
-//        }
-//    }
-    
-    
-    func generateBackCard() -> Card
-    {
-    
+
+    func generateBackCard() -> Card {
         let card = Card(image: "back", strength: 0)
         return card
         
     }
-    
     
     func setBackCards() {
         let backPlayerCard = self.generateBackCard() // Use 'self' explicitly
@@ -97,8 +69,6 @@ class GameViewModel: ObservableObject{
         let backHouseCard = self.generateBackCard() // Use 'self' explicitly
         houseCard = backHouseCard
     }
-    
-    
     
     private func startTurnTimer() {
         var counter = 0
@@ -128,9 +98,6 @@ class GameViewModel: ObservableObject{
         }
     }
     
-    
-    
-    
     private func turnCards() {
         // Perform card turning logic here
         // Update the playerScore and houseScore based on card comparison
@@ -144,9 +111,23 @@ class GameViewModel: ObservableObject{
     }
     
     private func endGame() {
-        self.isGameOver = true
-        // Handle end of game logic, navigate to the next page
+        Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { [weak self] timer in
+            self?.getWinner()
+            self?.isGameOver = true
+            timer.invalidate()
+        }
     }
+    
+    private func getWinner() {
+        if playerScore > houseScore {
+            winner = playerName
+            winnerScore = playerScore
+        }else {
+            winner = "PC"
+            winnerScore = houseScore
+        }
+    }
+    
 }
 
 
